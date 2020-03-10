@@ -1,0 +1,72 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Steven Adler">
+        <meta name="keywords" content="Node, Express, Webpack, NLP">
+        
+        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+        
+        <title>Natural Language Processing</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                Logo
+            </div>
+            <div class="title">
+                Natural Language Processing
+            </div>
+            <nav>
+                <a href="#">Navlink</a>
+                <a href="#">Navlink</a>
+                <a href="#">Navlink</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <p>What statement would you like to evaluate?</p>
+                <form onsubmit="Client.formHandler(event)"> 
+                    <input id="statement" type="text" name="input" value="" placeholder="Statement">
+                    <input type="submit" value="submit">
+                </form>
+            <section>
+
+            <section>
+                <div id="result">
+                    <p>Your text: <span id="text"></span></p>
+                    <p>Polarity of your text: <span id="polarity"></span></p>
+                    <p>Confidence of the polarity: <span id="confPol"></span></p>
+                    <p>Subjectivity of your text: <span id="subjectivity"></span></p>
+                    <p>Confidence of the subjectivity: <span id="confSub"></span></p>
+                </div>
+            </section>
+
+            <section>
+                <div id="collapsibles">
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+            <nav>
+                <a href="#">Social</a>
+                <a href="#">Social</a>
+                <a href="#">Social</a>
+            </nav>
+        </footer>
+
+        <script>
+        // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+           // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

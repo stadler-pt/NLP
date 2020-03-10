@@ -1,0 +1,15 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgba($color: #2222ff, $alpha: 0.5);
+    color: whitesmoke;
+    padding: 0.2em 1em;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+}

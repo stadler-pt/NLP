@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    background-color: rgba($color: #22ffff, $alpha: 0.2);
+    padding: 1.5em;
+    width: 100vw;
+    height: 92vh;
+    text-align: center;
+    form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        max-width: 1000px;
+        input {
+            font-size: 1.2em;
+            text-align: center;
+            border-radius: 5px;
+            margin: 0.5em;
+            &[type=submit] {
+                width: 5em;
+            }
+        }
+    }
+}
+
+#result {
+    border-radius: 1em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #ccc, $alpha: 0.6);
+    padding: 0 1em;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 1.5em;
+    p {
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+        span {
+            float: right;
+        }
+    }
+    
+}
+
+#collapsibles {
+    border-radius: 1em;
+    display: flex;
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.4s ease-in;
+    background-color: rgba($color: #ccc, $alpha: 0.6);
+    padding: 1em 0;
+    margin: auto;
+}
+
+.lastResult {
+    padding: 1em;
+    margin: 1em;
+    border-left: solid 1px rgba($color: whitesmoke, $alpha: 0.6);
+    border-right: solid 1px rgba($color: whitesmoke, $alpha: 0.6);
+    p {
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+}
